@@ -8,7 +8,7 @@ const ExpenseItem = (props) => {
   console.log('Expense item evaluated by React');
 
   const handleClick = () => {
-    setTitle('Boobies!');
+    setTitle('Yikes!');
     console.log(title);
   };
 
