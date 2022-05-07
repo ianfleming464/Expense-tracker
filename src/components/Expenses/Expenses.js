@@ -5,7 +5,7 @@ import './Expenses.css';
 import { useState } from 'react';
 
 export default function Expenses(props) {
-  const [filteredYear, setFilteredYear] = useState('2020');
+  const [filteredYear, setFilteredYear] = useState('2022');
 
   const filterChangeHandler = (selectedYear) => {
     setFilteredYear(selectedYear);
