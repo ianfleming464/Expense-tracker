@@ -12,20 +12,18 @@ export default function Expenses(props) {
   };
 
   return (
-    <div>
+    <Card className='expenses'>
       <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler} />
-      <Card className='expenses'>
-        {props.expenses.map((expense) => {
-          return (
-            <ExpenseItem
-              key={expense.title}
-              title={expense.title}
-              amount={expense.amount}
-              date={expense.date}
-            />
-          );
-        })}
-      </Card>
-    </div>
+      {props.expenses.map((expense) => {
+        return (
+          <ExpenseItem
+            key={expense.title}
+            title={expense.title}
+            amount={expense.amount}
+            date={expense.date}
+          />
+        );
+      })}
+    </Card>
   );
 }
